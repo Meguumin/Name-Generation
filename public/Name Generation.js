@@ -14,6 +14,7 @@ function SetText(){
   CallAll();
   document.getElementById("name").innerHTML = "Click To Generate";;
 }
+
 function GetName(){
   
   fetch('names.txt')   
@@ -23,7 +24,9 @@ function GetName(){
     const text = data; 
     data = text.split(/\r?\n/);  
     let name = Math.round(Math.random() * 18240);
-    First = data[name];
+    First = data[name]  
+    
+    
    // console.log(First)
   });
 }
@@ -50,8 +53,10 @@ function Congregate(){
 }
 
 
-
-
+// function callHelperTest() {
+  //  fetch("/helper_test");
+     
+  //}
   
 
 
